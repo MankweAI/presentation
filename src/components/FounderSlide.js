@@ -22,16 +22,15 @@ const CheckIcon = () => (
 
 export default function FounderSlide() {
   return (
-    <section className="flex h-screen items-center justify-center bg-slate-50 px-4 py-12">
+    <section className="flex min-h-screen items-center justify-center bg-slate-50 px-4 py-20 md:py-32">
       <div className="flex w-full max-w-5xl flex-col items-center gap-10 md:flex-row md:gap-16">
         {/* Image Column */}
         <div className="flex-shrink-0">
           <Image
-            // Use your profile.png asset
             src="/images/profile.png"
             alt="Mankwe Mokgabudi, Founder"
-            width={256} // The width of the image in pixels
-            height={256} // The height of the image in pixels
+            width={256}
+            height={256}
             className="h-48 w-48 rounded-full object-cover shadow-lg md:h-64 md:w-64"
           />
         </div>
@@ -45,7 +44,7 @@ export default function FounderSlide() {
             Founder & Purpose-Driven Developer
           </p>
 
-          <ul className="mt-6 flex flex-col items-center space-y-4 text-left md:items-start">
+          <ul className="mt-6 flex flex-col space-y-4 text-left">
             <li className="flex items-start gap-3">
               <CheckIcon />
               <span className="text-lg text-gray-700">
@@ -58,39 +57,43 @@ export default function FounderSlide() {
                 From Network Engineer to Software Solutions
               </span>
             </li>
-            {/* --- UPDATED PORTFOLIO SECTION --- */}
+            {/* --- UPDATED PORTFOLIO SECTION WITH BUTTONS --- */}
             <li className="flex items-start gap-3">
               <CheckIcon />
-              <span className="text-lg text-gray-700">
-                <strong>Portfolio:</strong>{" "}
-                <a
-                  href="https://www.exambuddy.online"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline transition-colors hover:text-emerald-700"
-                >
-                  ExamBuddy
-                </a>
-                ,{" "}
-                <a
-                  href="https://www.effluentic.co.za"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline transition-colors hover:text-emerald-700"
-                >
-                  Effluentic
-                </a>
-                ,{" "}
-                <a
-                  href="http://manytools.co.za/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline transition-colors hover:text-emerald-700"
-                >
-                  ManyTools
-                </a>
-                , The Goat
-              </span>
+              <div className="flex flex-col items-start">
+                <span className="text-lg text-gray-700">
+                  <strong>Portfolio:</strong>
+                </span>
+                <div className="mt-3 flex flex-wrap gap-3">
+                  <a
+                    href="https://www.exambuddy.online"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block transform rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-md transition-transform hover:-translate-y-1 hover:bg-emerald-700"
+                  >
+                    ExamBuddy
+                  </a>
+                  <a
+                    href="https://www.effluentic.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block transform rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-md transition-transform hover:-translate-y-1 hover:bg-emerald-700"
+                  >
+                    Effluentic
+                  </a>
+                  <a
+                    href="http://manytools.co.za/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block transform rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-md transition-transform hover:-translate-y-1 hover:bg-emerald-700"
+                  >
+                    ManyTools
+                  </a>
+                  <span className="inline-block cursor-not-allowed rounded-full bg-gray-300 px-4 py-2 text-sm font-semibold text-gray-600">
+                    The Goat
+                  </span>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
