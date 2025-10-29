@@ -58,11 +58,38 @@ export default function FounderSlide() {
                 From Network Engineer to Software Solutions
               </span>
             </li>
+            {/* --- UPDATED PORTFOLIO SECTION --- */}
             <li className="flex items-start gap-3">
               <CheckIcon />
               <span className="text-lg text-gray-700">
-                <strong>Portfolio:</strong> The Goat, ExamBuddy.online,
-                Effluentic
+                <strong>Portfolio:</strong>{" "}
+                <a
+                  href="https://www.exambuddy.online"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline transition-colors hover:text-emerald-700"
+                >
+                  ExamBuddy
+                </a>
+                ,{" "}
+                <a
+                  href="https://www.effluentic.co.za"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline transition-colors hover:text-emerald-700"
+                >
+                  Effluentic
+                </a>
+                ,{" "}
+                <a
+                  href="http://manytools.co.za/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline transition-colors hover:text-emerald-700"
+                >
+                  ManyTools
+                </a>
+                , The Goat
               </span>
             </li>
           </ul>
